@@ -8,6 +8,7 @@ root.configure(bg='black')
 i_title = root.title("Ashkan file writer")
 text_input = StringVar()
 
+
 label1 = Label(
     root,
     borderwidth = 4,
@@ -19,6 +20,7 @@ label1 = Label(
 label1.config(font =("Courier", 11))
 label1.grid(columnspan=5)
 
+# Text box
 text_box = Entry(
     root,
     width= 25,
@@ -29,6 +31,7 @@ text_box = Entry(
 )
 text_box.grid(row=1, column=0)
 
+# Enter button
 Button_1 = Button(
     root,
     text = "Enter",
@@ -38,6 +41,7 @@ Button_1 = Button(
 )
 Button_1.grid(row=1, column=1)
 
+# Save button
 Button_2 = Button(
     root,
     text = "Save Changes",
@@ -47,6 +51,7 @@ Button_2 = Button(
 )
 Button_2.grid(row=1, column=2)
 
+# Clear all button
 Button_3 = Button(
     root,
     text = "Clear All",
@@ -56,9 +61,10 @@ Button_3 = Button(
 )
 Button_3.grid(row=1, column=3)
 
+# Save and exit button
 Button_4 = Button(
     root,
-    text = "Save and Close",
+    text = "Save and Exit",
     bg = "black",
     fg = "green",
     command = lambda:d_Button_4()
