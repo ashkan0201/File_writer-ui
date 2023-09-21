@@ -2,6 +2,9 @@
 # Required library
 from tkinter import *
 
+with open("data.txt", "w")as file:
+    file.write("")
+
 list1 = []
 root = Tk()
 root.configure(bg='black') 
