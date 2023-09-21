@@ -8,6 +8,40 @@ root.configure(bg='black')
 i_title = root.title("Ashkan file writer")
 text_input = StringVar()
 
+# Enter
+def d_Button_1():
+    list1.append(text_input.get())
+    text_box.delete(0, 'end')
+
+# Save
+def d_Button_2():
+    with open("data.txt", "a") as file:
+        if list1 == []:
+            file.write("") 
+
+        else:
+            temp = "\n".join(list1)
+            file.write(temp+"\n")
+            list1.clear()
+            file.close()
+
+#Clear all
+def d_Button_3():
+    with open("data.txt", "w")as file:
+        file.write("")
+
+#Save and Exit
+def d_Button_4():
+    with open("data.txt", "a")as file:
+        if list1 == []:
+            file.write("") 
+
+        else:
+            temp = "\n".join(list1)
+            file.write(temp+"\n")
+            list1.clear()
+            file.close()
+    root.quit()
 
 label1 = Label(
     root,
