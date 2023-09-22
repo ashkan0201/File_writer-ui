@@ -20,3 +20,18 @@ With this button, you can delete all the contents of the file and clean the file
 
 `Save and exit button:` This button is for saving data and exit. This button saves and exits at the same time.
 
+## Installation
+```
+pip install tk
+pip install tkinter
+```
+or
+```
+pip install -r requirements.txt
+```
+
+## My information
+
+Email me if you see a bug:
+
+- ashkan0211@gmail.com
